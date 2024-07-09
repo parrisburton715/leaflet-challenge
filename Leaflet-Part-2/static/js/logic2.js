@@ -2,8 +2,8 @@
 var map = L.map('map').setView([19.8, -100], 3); 
 
 // Add base tile layer (CartoDB light basemap)
-var lightBaseMap = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://carto.com/attributions">CartoDB</a>'
+var lightBaseMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data: &copy; <a href="https://openstreetmap.org/copyrights">OpenStreetMap</a>, <a href = "https://viewfinderpanaromas.org>STRM </a> | Map style: &copy; <a href= "https://opentopomap.org>OpenTopMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 }).addTo(map);
 
 // Function to style earthquake markers based on magnitude and depth
